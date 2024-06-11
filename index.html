@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Barlow:regular,700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>FOODMOOD</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">FOODMOOD</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span class="icon-menu__line"></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto=".home" href="" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a data-goto=".our-menu" href="" class="menu__link">Меню</a></li>
+							<li class="menu__item"><a data-goto=".offer" href="" class="menu__link">Пропозиції</a></li>
+							<li class="menu__item"><a data-goto=".about" href="" class="menu__link">Деталі</a></li>
+							<li class="menu__item"><a data-goto=".contact" href="" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a class="header__card card-header">
+					<span  id="authBtn" class="card-header__authorization"></span>
+					<span class="card-header__quantity">0</span>
+				  </a>
+				  <div id="authModal" class="modal">
+					<div class="modal-content">
+						<span class="close" id="closeAuth">&times;</span>
+						<div id="authToggle">
+							<button id="loginToggle">Вхід</button>
+							<button id="registerToggle">Реєстрація</button>
+						</div>
+						<form id="authForm">
+							
+							<label for="authUsername">Логін:</label>
+							<input type="text" id="authUsername" name="username" required>
+							<br>
+							<label for="authPassword">Пароль:</label>
+							<input type="password" id="authPassword" name="password" required>
+							<br>
+							<label for="showPassword">Показати пароль</label>
+							<input type="checkbox" id="showPassword"> 
+							<br>
+							<button type="submit" id="authSubmit">Вхід</button>
+						</form>
+					</div>
+				</div>
+				<div class="header__button">
+					<a href=""  class="button-header button ">Замовити</a>
+				</div>
+				
+			</div>
+		</header>
+
+
+		<main class="page">
+			<section class="page__main main home ">
+				<div class="main__container">
+					<div class="main__price">За $5.00</div>
+					<h1 class="main__title">Аутернтична італійська піца</h1>
+					<div class="main__body">
+						<div class="main__yellow-lable">
+							<div class="main__yellow-lable-number">20%</div>
+							<div class="main__yellow-lable-word"> ЗНИЖКА</div>
+						</div>
+						<div class="main__text"> На ваше перше замовлення, хроблене в нашому новому додатку!</div>
+					</div>
+					<div class="main__button">
+						<a href="" class="button-main button">Завантажити</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__categories categories our-menu">
+				<div class="categories__container">
+					<div class="categories__sub-title sub-title">TOP вибору</div>
+					<div class="categories__title title">Наші пропозиції</div>
+					<div class="categories__items">
+						<a href="" class="categories__item item-categories">
+							<div class="item-categories__icon">
+								<img src="./img/categories/01.png" alt="">
+							</div>
+							<div class="item-categories__title">Піца</div>
+							<div class="item-categories__text">20 позицій</div>
+						</a>
+						<a href="" class="categories__item item-categories">
+							<div class="item-categories__icon">
+								<img src="./img/categories/02.png" alt="">
+							</div>
+							<div class="item-categories__title">Паста</div>
+							<div class="item-categories__text">15 варіацй</div>
+						</a>
+						<a href="" class="categories__item item-categories">
+							<div class="item-categories__icon">
+								<img src="./img/categories/03.png" alt="">
+							</div>
+							<div class="item-categories__title">Десерти</div>
+							<div class="item-categories__text">20 страв</div>
+						</a>
+						<a href="" class="categories__item item-categories">
+							<div class="item-categories__icon">
+								<img src="./img/categories/04.png" alt="">
+							</div>
+							<div class="item-categories__title">Бургери</div>
+							<div class="item-categories__text">25 варіантів</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__yellow yellow">
+				<div class="yellow__container">
+					<div class="yellow__items">
+						<div class="yellow__item item-yellow">
+							<div class="item-yellow__icon">
+								<img src="./img/yellow/01.svg" alt="">
+							</div>
+							<div class="item-yellow__title">Безкоштовна доставка першого замовлення</div>
+							<div class="item-yellow__text">Зробіть своє перше замовлення сьогодні і скористайся пропозицією з безкоштовною доставкою першого замовлення  </div>
+						</div>
+						<div class="yellow__item item-yellow">
+							<div class="item-yellow__icon">
+								<img src="./img/yellow/02.svg" alt="">
+							</div>
+							<div class="item-yellow__title">Різноманітність страв</div>
+							<div class="item-yellow__text">Наше меню ретельно розроблене, щоб ви могли насолоджуватися справжнім кулінарним різноманіттям.</div>
+						</div>
+						<div class="yellow__item item-yellow">
+							<div class="item-yellow__icon">
+								<img src="./img/yellow/03.svg" alt="">
+							</div>
+							<div class="item-yellow__title">Тридцять хвилин доставки</div>
+							<div class="item-yellow__text">Ми цінуємо ваш час і робимо все можливе, щоб ви могли швидко отримати свої замовлення і насолодитися смачними стравами, не чекаючи довго.</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="page__outlet outlet offer">
+				<div class="outlet__container">
+					<div class="outlet__sub-title sub-title">НАШІ ТОЧКИ</div>
+					<h2 class="ounlet__title title">Знайдіть магазин поблизу</h2>
+					<div class="ounlet__items">
+						<article class="ounlet__item">
+							<a class="ounlet__image">
+								<img src="./img/outlet/01.jpg" alt="">
+							</a>
+							<div class="ounlet__icon"><img src="./img/outlet/icon.svg" alt=""></div>
+							<a href="" class="ounlet__address">Вулиця Ігорівська, 1/8, Київ, 02000</a>
+						</article>
+
+						<article class="ounlet__item">
+							<a class="ounlet__image">
+								<img src="./img/outlet/02.jpg" alt="">
+							</a>
+							<div class="ounlet__icon"><img src="./img/outlet/icon.svg" alt=""></div>
+							<a href="" class="ounlet__address">Вулиця Коцарська, 19, Харків, 61052</a>
+						</article>
+
+						<article class="ounlet__item">
+							<a class="ounlet__image">
+								<img src="./img/outlet/03.jpg" alt="">
+							</a>
+							<div class="ounlet__icon"><img src="./img/outlet/icon.svg" alt=""></div>
+							<a href="" class="ounlet__address">Вулиця Підвальна, 5, Львів, 79000</a>
+
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__started started">
+				<div class="started__container">
+					<div class="started__content">
+						<div class="started__sub-title sub-title">ПЕРЕДІСТОРІЯ</div>
+						<div class="started__title title">Сімейна справа</div>
+						<div class="started__bold-text">Наш дідусь, Нонно Луїджі, родом з Лаціо. Він виріс, 
+							насолоджуючись унікальною піцою в стилі Pizza Romana. Тепер ми живемо в Україні, але часто згадуємо смак цієї піци. 
+							Але  доступна лише піца в неаполітанському або американському стилі, ми вирішили відкрити свій заклад, щоб 
+							відтворити справжню римську піцу.
+							</div>
+						<div class="started__items">
+							<article class="started__item item-started">
+								<div class="item-started__icon">
+									<img src="./img/get-started/01.svg" alt="">
+								</div>
+								<div class="item-started__title">Спробуйте мрію</div>
+								<div class="item-started__text">Насолоджуйтеся вигідними цінами, які збережуть ваш бюджет. </div>
+							</article>
+
+							<article class="started__item item-started">
+								<div class="item-started__icon">
+									<img src="./img/get-started/02.svg" alt="">
+								</div>
+								<div class="item-started__title">Ділимося з іншими</div>
+								<div class="item-started__text">Гарантуємо смачні моменти та гарний настрій кожного дня!</div>
+							</article>
+
+
+						</div>
+
+					</div>
+					<div class="started__image">
+						<img src="./img/get-started/decore.jpg" alt="">
+					</div>
+
+				</div>
+			</section>
+
+			<section class="page__team team about">
+				<div class="team__container">
+					<div class="team__sub-title sub-title">Команда</div>
+					<h2 class="team__title title">Зустрічайте нашу найкращу команду</h2>
+					<div class="team__items">
+						<article class="team__item">
+							<div class="team__image">
+								<img src="./img/team/01.jpg" alt="">
+							</div>
+							<div class="team__name">Анастасія Кум</div>
+							<div class="team__post">Старший кухар</div>
+						</article>
+
+						<article class="team__item">
+							<div class="team__image">
+								<img src="./img/team/02.jpg" alt="">
+							</div>
+							<div class="team__name">Микола Загородній</div>
+							<div class="team__post">Шеф-кухар</div>
+						</article>
+
+						<article class="team__item">
+							<div class="team__image">
+								<img src="./img/team/03.jpg" alt="">
+							</div>
+							<div class="team__name">Ірина Петрик</div>
+							<div class="team__post">Шеф-кухар</div>
+						</article>
+
+						<article class="team__item">
+							<div class="team__image">
+								<img src="./img/team/04.jpg" alt="">
+							</div>
+							<div class="team__name">Олесь Мирний</div>
+							<div class="team__post">Старший кухар</div>
+						</article>
+
+
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__discount discount">
+				<div class="discount__container">
+					<div class="discount__content">
+						<h2 class="discount__title ">Отримайте знижку 20%.</h2>
+						<div class="discount__text">Отримайте фіксовану знижку 20% на своє перше замовлення через додаток Foodmood!</div>
+						<div class="discount__actions actions-discount">
+							<a class="actions-discount__google"><img src="./img/discount/01.png" alt="Google Play"></a>
+							<a class="actions-discount__app"><img src="./img/discount/02.png" alt="App Store"></a>
+						</div>
+					</div>
+					<div class="discount__image">
+						<img src="./img/discount/mobile image.png" alt="">
+
+
+					</div>
+				</div>
+			</section>
+
+			<section class="page__partners partners">
+				<div class="partners__container">
+					<div class="partners__items">
+						<div class="partners__item">
+							<img src="./img/partners/01.png" alt="">
+						</div>
+						<div class="partners__item">
+							<img src="./img/partners/02.png" alt="">
+						</div>
+						<div class="partners__item">
+							<img src="./img/partners/03.png" alt="">
+						</div>
+						<div class="partners__item">
+							<img src="./img/partners/04.png" alt="">
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="footer__main main-footer contact">
+			<div class="main-footer__container">
+				<div class="main-footer__column">
+					<a href="" class="main-footer__logo">FOODMOOD</a>
+					<div class="main-footer__text">Бажаємо вам смачних і приємних моментів з нашою піцою!
+
+					<div class="footer-address">
+						<a class="address-link" href="tel:+380960000007"
+							  >+ 38 (096) 000 00 07 <br></a
+							>
+						  
+							<a class="address-link" href="mailto:foodmood@gmail.com"
+							  >foodmood@gmail.com</a
+							>
+					</div>
+							
+						  
+					</div>
+					<div class="main-footer__social social">
+						<a href="" class="social__link"><img src="./img/social/01.svg" alt=""></a>
+						<a href="" class="social__link"><img src="./img/social/02.svg" alt=""></a>
+						<a href="" class="social__link"><img src="./img/social/03.svg" alt=""></a>
+					</div>
+				</div>
+
+				<div class="main-footer__column">
+					<div class="main-footer__label">Про нас</div>
+					<nav class="main-footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Наша історія</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Наші локації</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Поточні пропозиції</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="main-footer__column">
+					<div class="main-footer__label">Наше меню</div>
+					<nav class="main-footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Піца</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Паста</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Десерти</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Напої</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="main-footer__column">
+					<div class="main-footer__label">Наші локації</div>
+					<nav class="main-footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">FOODMOOD Київ</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link"> FOODMOOD Харків
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link"> FOODMOOD Львів</a>
+							</li>
+							
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer__bottom bottom-footer">
+			<div class="bottom-footer__container">
+				<div class="bottom-footer__copy">Copyright © 2022 The Pizzeria</div>
+				<div class="bottom-footer__partner">Powered by The FOODMOOD</div>
+
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
